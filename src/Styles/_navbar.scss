@@ -1,0 +1,123 @@
+
+
+.nav{
+//    background: linear-gradient(135deg, rgba(52,33,214,1) 0%, rgba(30,25,67,1) 100%);
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    position:fixed;
+    right: 0;
+    &-bars{
+        color: #fff;
+        margin: 1rem;
+        font-size: 2rem;
+        
+    }
+    
+    &-menu{
+        background: linear-gradient(135deg, rgba(52,33,214,1) 0%, rgba(30,25,67,1) 100%);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        
+        position: fixed;
+        top: 0;
+        transition: 500ms;
+        right: -100%;
+        z-index: 100;
+        
+        &.active{
+            right: 0;
+            transition: 500ms;
+        }
+
+        &-items{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+    }
+
+    &-text{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0.3rem;
+        text-decoration: none;
+        font-family: 'league';
+        position: relative;
+        
+        &:hover{
+            filter: invert(100%);
+            background-color: #1ac961;
+        }
+
+
+        & a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: #fff;
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem 1rem;
+        }
+
+
+    }
+    &-text2{        
+        & a{
+            -webkit-text-stroke: 1px #fff;
+            color: transparent; 
+        }
+    }
+}
+
+.menu-bars{
+    font-size: 2em;
+    color: #fff;
+
+}
+
+.navbar-toggle{
+
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 800px){
+
+    .nav{
+        display: none;    
+        
+        &-menu{
+            background: transparent;
+            width: 20%;
+            left: 2rem;
+
+            &-items{
+                justify-content: center;
+            }
+        }
+        &-text{
+            justify-content: start;
+
+            & a{
+                justify-content: start;
+                }
+        }
+    }
+    .navbar-toggle{
+       display: none;
+    }
+
+}

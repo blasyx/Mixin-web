@@ -1,0 +1,108 @@
+
+
+
+.contact{
+    @include background2;
+
+    &-title{
+
+        &-text{
+            font-family: 'league';
+            font-size: 2.3rem;
+            text-shadow: makelongshadow3($magenta);
+            margin: 2rem 0rem;
+        }
+
+        &-subtext{
+            font-family: 'titilliumregular';
+            font-size: 1.1rem;
+            margin: 2rem 0rem;
+        }
+    }
+
+    &-social{
+
+        &-link{
+            font-family: 'titillium';
+            font-size: 1rem;
+            margin: .5rem 0rem;
+        }
+    }
+
+    &-form{
+
+        &-title{
+            font-family: 'league';
+            font-size: 1.2rem;
+            margin: 3rem 0rem 1rem 0rem;
+        }
+    }
+}
+
+form{
+    width: 100%;
+    font-family: 'titilliumregular';
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+        
+}
+input, textarea{
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    color: $white;
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+}
+textarea {
+    vertical-align: top;
+    height: 15em;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    font-family: 'league';
+    background-color: $magenta;
+    color: $white;
+    border: 1px solid $white;
+    box-shadow: 3px 3px 10px $black;
+    transition: 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: makelongshadow2($magenta);
+}
+
+button:hover{
+    background-color: $white;
+    color: $magenta;
+    transition: 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+input:focus,
+textarea:focus {
+  border-color: $white;
+}
+
+@media only screen and (min-width: 800px){
+
+    .contact{
+        @include background3;
+        padding: 10% 25% 10% 40%;
+        }
+}

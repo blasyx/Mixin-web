@@ -1,0 +1,113 @@
+
+.about{
+    @include background2;
+    //height: auto;
+    &-text{
+
+        &-title{
+            font-family: 'titillium';
+            font-size: 1.5rem;
+
+        }
+        &-big{
+            font-family: 'league';
+            font-size: 3.5rem;
+            text-shadow: makelongshadow($magenta);
+            margin: 2rem 0rem;
+        }
+        &-small{
+            font-family: 'titillium';
+            font-size: 1rem;
+            margin: 2rem 0rem;
+        }
+    }
+
+    &-team{
+
+        &-people{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 200px;
+
+        }
+        &-title{
+            font-family: 'league';
+            font-size: 2rem;
+            margin: 2rem 0rem;
+        }
+    }
+
+    &-law{
+        text-align: center;
+        padding: 4rem 1rem;
+        margin: 2rem 0rem;
+        font-family: 'league';
+        font-size: 2rem;
+        border: 1px solid $white;
+        overflow: hidden;
+        &-words{
+            text-shadow: makelongshadow($magenta);
+            margin: 1rem 0rem;
+        }
+
+        &-sub{
+            font-family: 'titilliumitalic';
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        &-team{
+            font-family: 'titilliumregular';
+            padding: 2rem 0rem;
+            font-size: 1rem;
+            text-align: start;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 800px){
+
+
+    .about{
+        @include background3;
+        padding: 10% 5% 10% 30%;
+
+        &-text{
+            overflow: hidden;
+            padding: 1.5rem 3rem;
+            &-big{
+                font-family: 'league';
+                font-size: 5rem;
+                text-shadow: makelongshadow($magenta);
+                margin: 2rem 0rem;
+                letter-spacing: -2px;
+            }
+            &-small{
+                font-family: 'titillium';
+                font-size: 1rem;
+                margin: 2rem 0rem;
+            }
+        }
+
+        &-team{
+/*             display: flex;
+            flex-direction: column;
+            align-items: center;  */
+
+            &-people{
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            &-title{
+                text-align: center;
+                font-family: 'league';
+                font-size: 2rem;
+                margin: 5rem 0rem 0rem 0rem;
+            }
+        }
+    }
+}

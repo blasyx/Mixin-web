@@ -1,0 +1,128 @@
+
+
+.work{
+    @include background2;
+
+    &-title{
+            font-family: 'titillium';
+            font-size: 1.5rem;  
+            text-shadow: makelongshadow3($magenta);
+    }
+
+    &-intro{
+        font-family: 'titilliumregular';
+        font-size: 1.3rem;
+        margin: 4rem 0rem;
+    }
+
+    &-clients{
+
+        &-title{
+            text-align: center;
+            font-family: 'league';
+            font-size: 3.5rem;
+            text-shadow: makelongshadow($magenta);
+            margin: 2rem 0rem;
+        }
+
+        &-box{
+            display: flex;
+            flex-direction: column;
+            font-family: 'league';
+            font-size: 1rem;
+            margin: 1rem 0rem 1rem 2rem;
+            &-name{
+                margin: 0.5rem;
+
+                &::before{
+                    content:'';
+                    position: absolute;
+                    transform:translateX(-300%) translateY(150%);
+                    width: 0.3rem;
+                    height: 0.3rem;
+                    border-radius: 50%;
+                    background-color: $white;
+                    border: 1px solid $white;
+                }
+            }
+        }
+
+        &-box1, &-box2, &-box3{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    &-special{
+        font-family: 'titilliumregular';
+        font-size: 1rem;
+        margin: 3rem 1rem;
+    }
+
+    &-contact{
+        font-family: 'league';
+        font-size: 2rem;
+        padding: 3rem 0rem;
+        margin: 2rem 0rem;
+        border: 1px solid $white;
+        overflow: hidden;
+        &-text{
+            text-shadow: makelongshadow2($magenta);
+            text-align: center;
+            position: relative;
+
+            &::after{
+                content:'go';
+                position: absolute;
+                transform: translateX(-300%) translateY(80%);
+                text-shadow: makelongshadow($magenta);
+                bottom: -100px;
+                transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            &:hover::after{
+                bottom: 0px;
+                transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (min-width: 800px){
+
+    .work{
+        @include background3;
+        padding: 10% 5% 10% 30%;
+        &-intro{
+            font-family: 'league';
+            font-size: 1.3rem;
+            width: 50%;
+        }
+
+
+        &-clients{
+            overflow: hidden;
+            border: 1px solid $white;
+            &-box{
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: 1.2rem;
+                padding: 3rem 0rem;
+            }
+        }
+
+        &-special{
+            font-family: 'league';
+            font-size: 1.3rem;
+            width: 50%;
+        }
+
+        &-contact{
+            width: 40%;
+        }
+    }
+
+
+}

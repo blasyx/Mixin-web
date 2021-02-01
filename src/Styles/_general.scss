@@ -1,0 +1,60 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$black: #000;
+$white: #fff;
+$magenta: #e5369e;
+$blue1: #3421d6;
+$blue2: #1e1943;
+
+
+
+
+@font-face{
+    font-family: 'league';
+    src: url('../Fonts/LeagueSpartan-Bold.otf');
+}
+@font-face{
+    font-family: 'titillium';
+    src: url('../Fonts/TitilliumWeb-ExtraLight.ttf');
+}
+@font-face{
+    font-family: 'titilliumregular';
+    src: url('../Fonts/TitilliumWeb-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'titilliumitalic';
+    src: url('../Fonts/TitilliumWeb-ExtraLightItalic.ttf');
+}
+
+
+
+@function makelongshadow($color) {
+    $val: 0px 0px $color;
+    @for $i from 1 through 300 {
+      $val: #{$val}, -#{$i}px #{$i}px #{$color};
+    }
+    @return $val;
+  }
+
+  @function makelongshadow2($color) {
+    $val: 0px 0px $color;
+    @for $i from 1 through 300 {
+      $val: #{$val}, #{$i}px -#{$i}px #{$color};
+    }
+    @return $val;
+  }
+
+  @function makelongshadow3($color) {
+    $val: 0px 0px $color;
+    @for $i from 1 through 300 {
+      $val: #{$val}, -#{$i}px -#{$i}px #{$color};
+    }
+    @return $val;
+  }
