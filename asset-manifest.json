@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Mixin-web/static/css/main.98b6fd3c.chunk.css",
-    "main.js": "/Mixin-web/static/js/main.cd8ab2d5.chunk.js",
-    "main.js.map": "/Mixin-web/static/js/main.cd8ab2d5.chunk.js.map",
+    "main.js": "/Mixin-web/static/js/main.1760dc3d.chunk.js",
+    "main.js.map": "/Mixin-web/static/js/main.1760dc3d.chunk.js.map",
     "runtime-main.js": "/Mixin-web/static/js/runtime-main.e5e5950b.js",
     "runtime-main.js.map": "/Mixin-web/static/js/runtime-main.e5e5950b.js.map",
     "static/js/2.95bc156a.chunk.js": "/Mixin-web/static/js/2.95bc156a.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.e5e5950b.js",
     "static/js/2.95bc156a.chunk.js",
     "static/css/main.98b6fd3c.chunk.css",
-    "static/js/main.cd8ab2d5.chunk.js"
+    "static/js/main.1760dc3d.chunk.js"
   ]
 }
