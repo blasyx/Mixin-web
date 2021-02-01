@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Mixin-web/static/css/main.98b6fd3c.chunk.css",
+    "main.js": "/Mixin-web/static/js/main.43cf574c.chunk.js",
+    "main.js.map": "/Mixin-web/static/js/main.43cf574c.chunk.js.map",
+    "runtime-main.js": "/Mixin-web/static/js/runtime-main.e5e5950b.js",
+    "runtime-main.js.map": "/Mixin-web/static/js/runtime-main.e5e5950b.js.map",
+    "static/js/2.95bc156a.chunk.js": "/Mixin-web/static/js/2.95bc156a.chunk.js",
+    "static/js/2.95bc156a.chunk.js.map": "/Mixin-web/static/js/2.95bc156a.chunk.js.map",
+    "static/js/3.a92159f2.chunk.js": "/Mixin-web/static/js/3.a92159f2.chunk.js",
+    "static/js/3.a92159f2.chunk.js.map": "/Mixin-web/static/js/3.a92159f2.chunk.js.map",
+    "index.html": "/Mixin-web/index.html",
+    "static/css/main.98b6fd3c.chunk.css.map": "/Mixin-web/static/css/main.98b6fd3c.chunk.css.map",
+    "static/js/2.95bc156a.chunk.js.LICENSE.txt": "/Mixin-web/static/js/2.95bc156a.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/Mixin-web/static/media/back2.5e200c22.png",
+    "static/media/people3.af7bee27.jpg": "/Mixin-web/static/media/people3.af7bee27.jpg",
+    "static/media/people6.d5bc612e.jpg": "/Mixin-web/static/media/people6.d5bc612e.jpg",
+    "static/media/people7.c37dad7b.jpg": "/Mixin-web/static/media/people7.c37dad7b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5e5950b.js",
+    "static/js/2.95bc156a.chunk.js",
+    "static/css/main.98b6fd3c.chunk.css",
+    "static/js/main.43cf574c.chunk.js"
+  ]
+}
